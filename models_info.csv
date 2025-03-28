@@ -1,0 +1,6 @@
+name, dataset_name, features_list, comments
+hf_potnet_model, hf_models_withmodelcard_nov2024, ['num_downloads', 'num_likes', 'task_group', 'author_category', 'language_category', 'downloads_category', 'location'], 
+hf_potnet_model_v2, hf_models_withmodelcard_nov2024, ['task_group', 'author_category', 'language_category', 'downloads_category', 'location', 'base_model_category'], .OutOfMemoryError: CUDA out of memory. Tried to allocate 36.55 GiB. GPU 0 has a total capacity of 15.88 GiB of which 15.51 GiB is free.
+hf_potnet_model_v2, hf_models_withmodelcard_nov2024, ['task_group', 'author_category', 'language_category', 'downloads_category', 'location'],
+hf_potnet_model_v3, high_downloads, ['task_group', 'author_category', 'language_category', 'downloads_category', 'location'], This dataset only contains models where downloads_category equals High\, 15166 rows
+hf_potnet_model_mid, mid_downloads, ['task_group', 'author_category', 'language_category', 'downloads_category', 'location'], This dataset only contains models where downloads_category equals Mid\, 37247 rows
