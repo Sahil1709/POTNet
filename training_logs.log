@@ -14,3 +14,19 @@
 2025-03-27 16:50:43,384 - Macro Average F1 Score: 0.5547
 2025-03-27 16:50:43,384 - Training Time: 90.73 seconds
 2025-03-27 16:50:43,384 - Testing Time: 1.90 seconds
+2025-04-01 23:22:35,919 - Algorithm: logistic
+2025-04-01 23:22:35,920 - Accuracy: 0.5785
+2025-04-01 23:22:35,920 - Precision: 0.5785
+2025-04-01 23:22:35,920 - Recall: 0.5785
+2025-04-01 23:22:35,920 - Micro Average F1 Score: 0.5785
+2025-04-01 23:22:35,920 - Macro Average F1 Score: 0.5753
+2025-04-01 23:22:35,920 - Training Time: 13.35 seconds
+2025-04-01 23:22:35,920 - Testing Time: 0.18 seconds
+2025-04-01 23:23:48,895 - Algorithm: random_forest
+2025-04-01 23:23:48,895 - Accuracy: 0.5790
+2025-04-01 23:23:48,895 - Precision: 0.5790
+2025-04-01 23:23:48,895 - Recall: 0.5790
+2025-04-01 23:23:48,895 - Micro Average F1 Score: 0.5790
+2025-04-01 23:23:48,895 - Macro Average F1 Score: 0.5698
+2025-04-01 23:23:48,896 - Training Time: 71.29 seconds
+2025-04-01 23:23:48,896 - Testing Time: 1.30 seconds
