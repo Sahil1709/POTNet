@@ -1,0 +1,332 @@
+2025-04-01 21:16:36,159 INFO: Evaluating oversampling method: SMOTE
+2025-04-01 21:16:36,161 INFO: SMOTE: Running sampling via ('SMOTE', "{'proportion': 1.0, 'n_neighbors': 5, 'nn_params': {}, 'n_jobs': 1, 'ss_params': {'n_dim': 2, 'simplex_sampling': 'random', 'within_simplex_sampling': 'random', 'gaussian_component': {}}, 'random_state': None, 'class_name': 'SMOTE'}")
+2025-04-01 21:16:36,175 INFO: NearestNeighborsWithMetricTensor: NN fitting with metric minkowski
+2025-04-01 21:16:36,192 INFO: NearestNeighborsWithMetricTensor: kneighbors query minkowski
+2025-04-01 21:16:37,785 INFO: SMOTE: simplex sampling with n_dim 2
+2025-04-01 21:16:38,225 INFO: SMOTE: Resampled distribution: (array([0, 1, 2, 3]), array([190144, 190144,  26073, 607398]))
+2025-04-01 21:16:55,414 INFO: SMOTE - Logistic Regression: Accuracy: 0.7367, Micro-average F1: 0.7367
+2025-04-01 21:16:55,414 INFO: Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.09      0.49      0.15      4550
+           1       0.52      0.68      0.59     81490
+           2       0.09      0.00      0.00     11174
+           3       0.91      0.79      0.85    260314
+
+    accuracy                           0.74    357528
+   macro avg       0.40      0.49      0.40    357528
+weighted avg       0.79      0.74      0.75    357528
+
+2025-04-01 21:17:32,880 INFO: SMOTE - Random Forest: Accuracy: 0.7458, Micro-average F1: 0.7458
+2025-04-01 21:17:32,881 INFO: Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.10      0.47      0.17      4550
+           1       0.56      0.46      0.50     81490
+           2       0.30      0.00      0.00     11174
+           3       0.84      0.87      0.86    260314
+
+    accuracy                           0.75    357528
+   macro avg       0.45      0.45      0.38    357528
+weighted avg       0.75      0.75      0.74    357528
+
+2025-04-01 21:17:32,881 INFO: Evaluating oversampling method: Distance_SMOTE
+2025-04-01 21:17:32,883 INFO: distance_SMOTE: Running sampling via ('distance_SMOTE', "{'proportion': 1.0, 'n_neighbors': 5, 'nn_params': {}, 'n_jobs': 1, 'ss_params': {'n_dim': 2, 'simplex_sampling': 'random', 'within_simplex_sampling': 'random', 'gaussian_component': {}}, 'random_state': None, 'class_name': 'distance_SMOTE'}")
+2025-04-01 21:17:32,896 INFO: NearestNeighborsWithMetricTensor: NN fitting with metric minkowski
+2025-04-01 21:17:32,913 INFO: NearestNeighborsWithMetricTensor: kneighbors query minkowski
+2025-04-01 21:17:34,513 INFO: distance_SMOTE: simplex sampling with n_dim 2
+2025-04-01 21:17:34,655 INFO: Distance_SMOTE: Resampled distribution: (array([0, 1, 2, 3]), array([190144, 190144,  26073, 607398]))
+2025-04-01 21:17:54,384 INFO: Distance_SMOTE - Logistic Regression: Accuracy: 0.7367, Micro-average F1: 0.7367
+2025-04-01 21:17:54,384 INFO: Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.09      0.49      0.15      4550
+           1       0.52      0.68      0.59     81490
+           2       0.09      0.00      0.00     11174
+           3       0.91      0.79      0.85    260314
+
+    accuracy                           0.74    357528
+   macro avg       0.40      0.49      0.40    357528
+weighted avg       0.79      0.74      0.75    357528
+
+2025-04-01 21:18:31,077 INFO: Distance_SMOTE - Random Forest: Accuracy: 0.7458, Micro-average F1: 0.7458
+2025-04-01 21:18:31,078 INFO: Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.10      0.47      0.17      4550
+           1       0.56      0.46      0.50     81490
+           2       0.30      0.00      0.00     11174
+           3       0.84      0.87      0.86    260314
+
+    accuracy                           0.75    357528
+   macro avg       0.45      0.45      0.38    357528
+weighted avg       0.75      0.75      0.74    357528
+
+2025-04-01 21:18:31,078 INFO: Evaluating oversampling method: Borderline_SMOTE1
+2025-04-01 21:18:31,080 INFO: Borderline_SMOTE1: Running sampling via ('Borderline_SMOTE1', "{'proportion': 1.0, 'n_neighbors': 5, 'k_neighbors': 5, 'nn_params': {}, 'n_jobs': 1, 'ss_params': {'n_dim': 2, 'simplex_sampling': 'random', 'within_simplex_sampling': 'random', 'gaussian_component': {}}, 'random_state': None, 'class_name': 'Borderline_SMOTE1'}")
+2025-04-01 21:18:31,093 INFO: NearestNeighborsWithMetricTensor: NN fitting with metric minkowski
+2025-04-01 21:18:33,659 INFO: NearestNeighborsWithMetricTensor: kneighbors query minkowski
+2025-04-01 21:20:08,506 INFO: NearestNeighborsWithMetricTensor: NN fitting with metric minkowski
+2025-04-01 21:20:08,523 INFO: NearestNeighborsWithMetricTensor: kneighbors query minkowski
+2025-04-01 21:20:09,911 INFO: Borderline_SMOTE1: simplex sampling with n_dim 2
+2025-04-01 21:20:10,345 INFO: Borderline_SMOTE1: Resampled distribution: (array([0, 1, 2, 3]), array([190144, 190144,  26073, 607398]))
+2025-04-01 21:20:26,723 INFO: Borderline_SMOTE1 - Logistic Regression: Accuracy: 0.7413, Micro-average F1: 0.7413
+2025-04-01 21:20:26,724 INFO: Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.09      0.42      0.15      4550
+           1       0.52      0.70      0.60     81490
+           2       0.32      0.00      0.01     11174
+           3       0.91      0.79      0.85    260314
+
+    accuracy                           0.74    357528
+   macro avg       0.46      0.48      0.40    357528
+weighted avg       0.79      0.74      0.76    357528
+
+2025-04-01 21:21:03,558 INFO: Borderline_SMOTE1 - Random Forest: Accuracy: 0.7275, Micro-average F1: 0.7275
+2025-04-01 21:21:03,559 INFO: Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.06      0.47      0.11      4550
+           1       0.55      0.46      0.50     81490
+           2       0.30      0.00      0.00     11174
+           3       0.86      0.85      0.85    260314
+
+    accuracy                           0.73    357528
+   macro avg       0.44      0.44      0.37    357528
+weighted avg       0.76      0.73      0.74    357528
+
+2025-04-01 21:21:03,559 INFO: Evaluating oversampling method: ADASYN
+2025-04-01 21:21:03,561 INFO: ADASYN: Running sampling via ('ADASYN', "{'n_neighbors': 5, 'd_th': 0.9, 'beta': 1.0, 'nn_params': {}, 'n_jobs': 1, 'proportion': 1.0, 'ss_params': {'n_dim': 2, 'simplex_sampling': 'random', 'within_simplex_sampling': 'random', 'gaussian_component': {}}, 'random_state': None, 'class_name': 'ADASYN'}")
+2025-04-01 21:21:03,574 INFO: NearestNeighborsWithMetricTensor: NN fitting with metric minkowski
+2025-04-01 21:21:06,069 INFO: NearestNeighborsWithMetricTensor: kneighbors query minkowski
+2025-04-01 21:22:40,329 INFO: NearestNeighborsWithMetricTensor: NN fitting with metric minkowski
+2025-04-01 21:22:40,346 INFO: NearestNeighborsWithMetricTensor: kneighbors query minkowski
+2025-04-01 21:22:41,925 INFO: ADASYN: simplex sampling with n_dim 2
+2025-04-01 21:22:42,358 INFO: ADASYN: Resampled distribution: (array([0, 1, 2, 3]), array([190144, 190144,  26073, 607398]))
+2025-04-01 21:23:01,809 INFO: ADASYN - Logistic Regression: Accuracy: 0.7397, Micro-average F1: 0.7397
+2025-04-01 21:23:01,809 INFO: Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.09      0.46      0.15      4550
+           1       0.52      0.69      0.59     81490
+           2       0.09      0.00      0.00     11174
+           3       0.91      0.79      0.85    260314
+
+    accuracy                           0.74    357528
+   macro avg       0.40      0.49      0.40    357528
+weighted avg       0.79      0.74      0.75    357528
+
+2025-04-01 21:23:38,246 INFO: ADASYN - Random Forest: Accuracy: 0.7231, Micro-average F1: 0.7231
+2025-04-01 21:23:38,246 INFO: Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.07      0.56      0.12      4550
+           1       0.55      0.44      0.49     81490
+           2       0.30      0.00      0.00     11174
+           3       0.86      0.85      0.85    260314
+
+    accuracy                           0.72    357528
+   macro avg       0.45      0.46      0.37    357528
+weighted avg       0.76      0.72      0.73    357528
+
+2025-04-01 21:23:38,247 INFO: Evaluating oversampling method: MWMOTE
+2025-04-01 21:23:38,249 INFO: MWMOTE: Running sampling via ('MWMOTE', "{'proportion': 1.0, 'k1': 5, 'k2': 5, 'k3': 5, 'M': 10, 'cf_th': 5.0, 'cmax': 10.0, 'nn_params': {}, 'n_jobs': 1, 'ss_params': {'n_dim': 2, 'simplex_sampling': 'random', 'within_simplex_sampling': 'random', 'gaussian_component': {}}, 'random_state': None, 'class_name': 'MWMOTE'}")
+2025-04-01 21:23:38,263 INFO: NearestNeighborsWithMetricTensor: NN fitting with metric minkowski
+2025-04-01 21:23:40,782 INFO: NearestNeighborsWithMetricTensor: kneighbors query minkowski
+2025-04-02 00:44:23,088 INFO: NearestNeighborsWithMetricTensor: NN fitting with metric minkowski
+2025-04-02 00:44:23,538 INFO: NearestNeighborsWithMetricTensor: kneighbors query minkowski
+2025-04-02 00:44:24,033 INFO: NearestNeighborsWithMetricTensor: NN fitting with metric minkowski
+2025-04-02 00:44:24,049 INFO: NearestNeighborsWithMetricTensor: kneighbors query minkowski
+2025-04-02 00:44:24,056 INFO: MWMOTE: computing closeness factors
+2025-04-02 00:44:24,056 ERROR: Error with MWMOTE: numpy boolean subtract, the `-` operator, is not supported, use the bitwise_xor, the `^` operator, or the logical_xor function instead.
+2025-04-02 00:44:24,057 INFO: Evaluating oversampling method: KMeans_SMOTE
+2025-04-02 00:44:24,058 INFO: kmeans_SMOTE: Running sampling via ('kmeans_SMOTE', "{'proportion': 1.0, 'n_neighbors': 5, 'nn_params': {}, 'n_clusters': 10, 'irt': 2.0, 'n_jobs': 1, 'ss_params': {'n_dim': 2, 'simplex_sampling': 'random', 'within_simplex_sampling': 'random', 'gaussian_component': {}}, 'random_state': None, 'class_name': 'kmeans_SMOTE'}")
+2025-04-02 00:44:25,371 INFO: kmeans_SMOTE: returning copies for number of clusters after filtering is 0
+2025-04-02 00:44:25,396 INFO: KMeans_SMOTE: Resampled distribution: (array([0, 1, 2, 3]), array([ 10616, 190144,  26073, 607398]))
+2025-04-02 00:44:38,404 INFO: KMeans_SMOTE - Logistic Regression: Accuracy: 0.7652, Micro-average F1: 0.7652
+2025-04-02 00:44:38,404 INFO: Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.45      0.00      0.00      4550
+           1       0.51      0.83      0.63     81490
+           2       0.31      0.00      0.01     11174
+           3       0.91      0.79      0.85    260314
+
+    accuracy                           0.77    357528
+   macro avg       0.55      0.41      0.37    357528
+weighted avg       0.80      0.77      0.76    357528
+
+2025-04-02 00:45:09,695 INFO: KMeans_SMOTE - Random Forest: Accuracy: 0.7689, Micro-average F1: 0.7689
+2025-04-02 00:45:09,696 INFO: Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.75      0.00      0.00      4550
+           1       0.54      0.58      0.56     81490
+           2       0.34      0.03      0.06     11174
+           3       0.84      0.87      0.86    260314
+
+    accuracy                           0.77    357528
+   macro avg       0.62      0.37      0.37    357528
+weighted avg       0.76      0.77      0.75    357528
+
+2025-04-02 00:45:09,696 INFO: Evaluating oversampling method: Supervised_SMOTE
+2025-04-02 00:45:09,698 INFO: Supervised_SMOTE: Running sampling via ('Supervised_SMOTE', "{'proportion': 1.0, 'th_lower': 0.5, 'th_upper': 1.0, 'classifier': ('sklearn.ensemble', 'RandomForestClassifier', {'n_estimators': 50, 'n_jobs': 1, 'random_state': 5}), 'n_jobs': 1, 'ss_params': {'n_dim': 2, 'simplex_sampling': 'random', 'within_simplex_sampling': 'random', 'gaussian_component': {}}, 'random_state': None, 'class_name': 'Supervised_SMOTE'}")
+2025-04-02 00:45:20,386 INFO: Supervised_SMOTE: simplex sampling with n_dim 2
+2025-04-02 00:45:21,075 ERROR: Error with Supervised_SMOTE: Unable to allocate 8.70 TiB for an array with shape (112688840, 10616) and data type int64
+2025-04-02 00:45:21,082 INFO: Evaluating oversampling method: TomekLinks
+2025-04-02 00:45:21,086 INFO: SMOTE_TomekLinks: Running sampling via ('SMOTE_TomekLinks', "{'proportion': 1.0, 'n_neighbors': 5, 'nn_params': {}, 'ss_params': {'n_dim': 2, 'simplex_sampling': 'random', 'within_simplex_sampling': 'random', 'gaussian_component': None}, 'n_jobs': 1, 'random_state': None, 'class_name': 'SMOTE_TomekLinks'}")
+2025-04-02 00:45:21,099 INFO: SMOTE: Running sampling via ('SMOTE', "{'proportion': 1.0, 'n_neighbors': 5, 'nn_params': {'metric_tensor': None}, 'n_jobs': 1, 'ss_params': {'n_dim': 2, 'simplex_sampling': 'random', 'within_simplex_sampling': 'random', 'gaussian_component': {}}, 'random_state': None, 'class_name': 'SMOTE'}")
+2025-04-02 00:45:21,112 INFO: NearestNeighborsWithMetricTensor: NN fitting with metric minkowski
+2025-04-02 00:45:21,128 INFO: NearestNeighborsWithMetricTensor: kneighbors query minkowski
+2025-04-02 00:45:22,701 INFO: SMOTE: simplex sampling with n_dim 2
+2025-04-02 00:45:23,141 INFO: TomekLinkRemoval: Running noise removal.
+2025-04-02 00:45:23,145 INFO: NearestNeighborsWithMetricTensor: NN fitting with metric minkowski
+2025-04-02 00:45:26,417 INFO: NearestNeighborsWithMetricTensor: kneighbors query minkowski
+2025-04-02 04:51:57,159 INFO: TomekLinks: Resampled distribution: (array([0, 1, 2, 3]), array([190144, 190144,  26073, 607398]))
+2025-04-02 04:52:14,535 INFO: TomekLinks - Logistic Regression: Accuracy: 0.7366, Micro-average F1: 0.7366
+2025-04-02 04:52:14,535 INFO: Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.09      0.49      0.15      4550
+           1       0.52      0.68      0.59     81490
+           2       0.09      0.00      0.00     11174
+           3       0.91      0.79      0.85    260314
+
+    accuracy                           0.74    357528
+   macro avg       0.40      0.49      0.40    357528
+weighted avg       0.79      0.74      0.75    357528
+
+2025-04-02 04:52:49,689 INFO: TomekLinks - Random Forest: Accuracy: 0.7457, Micro-average F1: 0.7457
+2025-04-02 04:52:49,690 INFO: Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.10      0.47      0.17      4550
+           1       0.56      0.46      0.50     81490
+           2       0.30      0.00      0.00     11174
+           3       0.84      0.87      0.86    260314
+
+    accuracy                           0.75    357528
+   macro avg       0.45      0.45      0.38    357528
+weighted avg       0.75      0.75      0.74    357528
+
+2025-04-02 04:52:49,690 INFO: Evaluating oversampling method: Smote Cosine
+2025-04-02 04:52:49,691 INFO: SMOTE_Cosine: Running sampling via ('SMOTE_Cosine', "{'proportion': 1.0, 'n_neighbors': 5, 'n_jobs': 1, 'random_state': None, 'class_name': 'SMOTE_Cosine'}")
+2025-04-02 04:53:41,592 ERROR: Error with Smote Cosine: numpy boolean subtract, the `-` operator, is not supported, use the bitwise_xor, the `^` operator, or the logical_xor function instead.
+2025-04-02 04:53:41,599 INFO: Evaluating oversampling method: Polynomial Smote
+2025-04-02 04:53:41,601 INFO: polynom_fit_SMOTE_poly: Running sampling via ('polynom_fit_SMOTE_poly', "{'order': 2, 'proportion': 1.0, 'topology': 'poly_2', 'random_state': None, 'class_name': 'polynom_fit_SMOTE_poly'}")
+2025-04-02 04:53:41,611 INFO: polynom_fit_SMOTE: Running sampling via ('polynom_fit_SMOTE', "{'proportion': 1.0, 'topology': 'poly_2', 'random_state': None, 'class_name': 'polynom_fit_SMOTE'}")
+2025-04-02 04:53:41,982 INFO: Polynomial Smote: Resampled distribution: (array([0, 1, 2, 3]), array([190144, 190144,  26073, 607398]))
+2025-04-02 04:54:03,830 INFO: Polynomial Smote - Logistic Regression: Accuracy: 0.7380, Micro-average F1: 0.7380
+2025-04-02 04:54:03,830 INFO: Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.09      0.49      0.15      4550
+           1       0.52      0.69      0.59     81490
+           2       0.27      0.00      0.00     11174
+           3       0.91      0.79      0.85    260314
+
+    accuracy                           0.74    357528
+   macro avg       0.45      0.49      0.40    357528
+weighted avg       0.79      0.74      0.75    357528
+
+2025-04-02 04:54:51,435 INFO: Polynomial Smote - Random Forest: Accuracy: 0.7689, Micro-average F1: 0.7689
+2025-04-02 04:54:51,435 INFO: Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.75      0.00      0.00      4550
+           1       0.54      0.58      0.56     81490
+           2       0.34      0.03      0.06     11174
+           3       0.84      0.87      0.86    260314
+
+    accuracy                           0.77    357528
+   macro avg       0.62      0.37      0.37    357528
+weighted avg       0.76      0.77      0.75    357528
+
+2025-04-02 04:54:51,436 INFO: Final results:
+2025-04-02 04:54:51,437 INFO: {
+  "SMOTE": {
+    "Logistic Regression": {
+      "accuracy": 0.736677966480947,
+      "f1": 0.736677966480947,
+      "report": "              precision    recall  f1-score   support\n\n           0       0.09      0.49      0.15      4550\n           1       0.52      0.68      0.59     81490\n           2       0.09      0.00      0.00     11174\n           3       0.91      0.79      0.85    260314\n\n    accuracy                           0.74    357528\n   macro avg       0.40      0.49      0.40    357528\nweighted avg       0.79      0.74      0.75    357528\n"
+    },
+    "Random Forest": {
+      "accuracy": 0.7458185093195498,
+      "f1": 0.7458185093195498,
+      "report": "              precision    recall  f1-score   support\n\n           0       0.10      0.47      0.17      4550\n           1       0.56      0.46      0.50     81490\n           2       0.30      0.00      0.00     11174\n           3       0.84      0.87      0.86    260314\n\n    accuracy                           0.75    357528\n   macro avg       0.45      0.45      0.38    357528\nweighted avg       0.75      0.75      0.74    357528\n"
+    }
+  },
+  "Distance_SMOTE": {
+    "Logistic Regression": {
+      "accuracy": 0.736677966480947,
+      "f1": 0.736677966480947,
+      "report": "              precision    recall  f1-score   support\n\n           0       0.09      0.49      0.15      4550\n           1       0.52      0.68      0.59     81490\n           2       0.09      0.00      0.00     11174\n           3       0.91      0.79      0.85    260314\n\n    accuracy                           0.74    357528\n   macro avg       0.40      0.49      0.40    357528\nweighted avg       0.79      0.74      0.75    357528\n"
+    },
+    "Random Forest": {
+      "accuracy": 0.7458408851894117,
+      "f1": 0.7458408851894117,
+      "report": "              precision    recall  f1-score   support\n\n           0       0.10      0.47      0.17      4550\n           1       0.56      0.46      0.50     81490\n           2       0.30      0.00      0.00     11174\n           3       0.84      0.87      0.86    260314\n\n    accuracy                           0.75    357528\n   macro avg       0.45      0.45      0.38    357528\nweighted avg       0.75      0.75      0.74    357528\n"
+    }
+  },
+  "Borderline_SMOTE1": {
+    "Logistic Regression": {
+      "accuracy": 0.7412873956725068,
+      "f1": 0.7412873956725068,
+      "report": "              precision    recall  f1-score   support\n\n           0       0.09      0.42      0.15      4550\n           1       0.52      0.70      0.60     81490\n           2       0.32      0.00      0.01     11174\n           3       0.91      0.79      0.85    260314\n\n    accuracy                           0.74    357528\n   macro avg       0.46      0.48      0.40    357528\nweighted avg       0.79      0.74      0.76    357528\n"
+    },
+    "Random Forest": {
+      "accuracy": 0.7275094538050166,
+      "f1": 0.7275094538050166,
+      "report": "              precision    recall  f1-score   support\n\n           0       0.06      0.47      0.11      4550\n           1       0.55      0.46      0.50     81490\n           2       0.30      0.00      0.00     11174\n           3       0.86      0.85      0.85    260314\n\n    accuracy                           0.73    357528\n   macro avg       0.44      0.44      0.37    357528\nweighted avg       0.76      0.73      0.74    357528\n"
+    }
+  },
+  "ADASYN": {
+    "Logistic Regression": {
+      "accuracy": 0.7396595511400506,
+      "f1": 0.7396595511400506,
+      "report": "              precision    recall  f1-score   support\n\n           0       0.09      0.46      0.15      4550\n           1       0.52      0.69      0.59     81490\n           2       0.09      0.00      0.00     11174\n           3       0.91      0.79      0.85    260314\n\n    accuracy                           0.74    357528\n   macro avg       0.40      0.49      0.40    357528\nweighted avg       0.79      0.74      0.75    357528\n"
+    },
+    "Random Forest": {
+      "accuracy": 0.7231125953771453,
+      "f1": 0.7231125953771453,
+      "report": "              precision    recall  f1-score   support\n\n           0       0.07      0.56      0.12      4550\n           1       0.55      0.44      0.49     81490\n           2       0.30      0.00      0.00     11174\n           3       0.86      0.85      0.85    260314\n\n    accuracy                           0.72    357528\n   macro avg       0.45      0.46      0.37    357528\nweighted avg       0.76      0.72      0.73    357528\n"
+    }
+  },
+  "KMeans_SMOTE": {
+    "Logistic Regression": {
+      "accuracy": 0.7651820277013269,
+      "f1": 0.7651820277013269,
+      "report": "              precision    recall  f1-score   support\n\n           0       0.45      0.00      0.00      4550\n           1       0.51      0.83      0.63     81490\n           2       0.31      0.00      0.01     11174\n           3       0.91      0.79      0.85    260314\n\n    accuracy                           0.77    357528\n   macro avg       0.55      0.41      0.37    357528\nweighted avg       0.80      0.77      0.76    357528\n"
+    },
+    "Random Forest": {
+      "accuracy": 0.7689160009845383,
+      "f1": 0.7689160009845383,
+      "report": "              precision    recall  f1-score   support\n\n           0       0.75      0.00      0.00      4550\n           1       0.54      0.58      0.56     81490\n           2       0.34      0.03      0.06     11174\n           3       0.84      0.87      0.86    260314\n\n    accuracy                           0.77    357528\n   macro avg       0.62      0.37      0.37    357528\nweighted avg       0.76      0.77      0.75    357528\n"
+    }
+  },
+  "TomekLinks": {
+    "Logistic Regression": {
+      "accuracy": 0.7366024479201629,
+      "f1": 0.7366024479201629,
+      "report": "              precision    recall  f1-score   support\n\n           0       0.09      0.49      0.15      4550\n           1       0.52      0.68      0.59     81490\n           2       0.09      0.00      0.00     11174\n           3       0.91      0.79      0.85    260314\n\n    accuracy                           0.74    357528\n   macro avg       0.40      0.49      0.40    357528\nweighted avg       0.79      0.74      0.75    357528\n"
+    },
+    "Random Forest": {
+      "accuracy": 0.7457429907587657,
+      "f1": 0.7457429907587657,
+      "report": "              precision    recall  f1-score   support\n\n           0       0.10      0.47      0.17      4550\n           1       0.56      0.46      0.50     81490\n           2       0.30      0.00      0.00     11174\n           3       0.84      0.87      0.86    260314\n\n    accuracy                           0.75    357528\n   macro avg       0.45      0.45      0.38    357528\nweighted avg       0.75      0.75      0.74    357528\n"
+    }
+  },
+  "Polynomial Smote": {
+    "Logistic Regression": {
+      "accuracy": 0.7379757669329395,
+      "f1": 0.7379757669329395,
+      "report": "              precision    recall  f1-score   support\n\n           0       0.09      0.49      0.15      4550\n           1       0.52      0.69      0.59     81490\n           2       0.27      0.00      0.00     11174\n           3       0.91      0.79      0.85    260314\n\n    accuracy                           0.74    357528\n   macro avg       0.45      0.49      0.40    357528\nweighted avg       0.79      0.74      0.75    357528\n"
+    },
+    "Random Forest": {
+      "accuracy": 0.7689160009845383,
+      "f1": 0.7689160009845383,
+      "report": "              precision    recall  f1-score   support\n\n           0       0.75      0.00      0.00      4550\n           1       0.54      0.58      0.56     81490\n           2       0.34      0.03      0.06     11174\n           3       0.84      0.87      0.86    260314\n\n    accuracy                           0.77    357528\n   macro avg       0.62      0.37      0.37    357528\nweighted avg       0.76      0.77      0.75    357528\n"
+    }
+  }
+}

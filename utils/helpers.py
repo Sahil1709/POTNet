@@ -128,3 +128,28 @@ def percent_distrib(df):
         percentages = df[col].value_counts(normalize=True) * 100
         print(percentages.round(2))
         print("\n")
+
+def run_advanced_smote(df, features, target):
+    """
+    This function applies SMOTE to the dataset and returns the resampled DataFrame.
+    """
+    from imblearn.over_sampling import SMOTE
+    from collections import Counter
+
+    # Separate features and target
+    X = df[features]
+    y = df[target]
+
+    # Apply SMOTE
+    smote = SMOTE(random_state=42)
+    X_resampled, y_resampled = smote.fit_resample(X, y)
+
+    # Create a new DataFrame with the resampled data
+    resampled_df = pd.DataFrame(X_resampled, columns=features)
+    resampled_df[target] = y_resampled
+
+    # Print the original and new class distribution
+    print(f"Original class distribution: {Counter(y)}")
+    print(f"Resampled class distribution: {Counter(y_resampled)}")
+
+    return resampled_df
