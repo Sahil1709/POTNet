@@ -6,3 +6,5 @@ torch == 2.4.1
 pot == 0.9.3
 scikit-learn
 tqdm
+smote-variants
+imbalanced-learn
