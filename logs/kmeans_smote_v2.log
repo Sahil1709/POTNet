@@ -1,0 +1,67 @@
+2025-04-17 13:04:49,006 - INFO - Processing downloads_category: High
+2025-04-17 13:04:49,019 - ERROR - Error processing downloads_category High: invalid literal for int() with base 10: '4yo1/llama3-eng-ko-8-llama'
+2025-04-17 13:04:49,019 - INFO - Processing downloads_category: Low
+2025-04-17 13:04:49,176 - ERROR - Error processing downloads_category Low: invalid literal for int() with base 10: '0x12/t5-opus_infopankki-en-zh-0'
+2025-04-17 13:04:49,176 - INFO - Processing downloads_category: Mid
+2025-04-17 13:04:49,224 - ERROR - Error processing downloads_category Mid: invalid literal for int() with base 10: '7wolf/wav2vec2-base-gender-classification'
+2025-04-17 13:04:49,224 - INFO - Processing downloads_category: Very Low
+2025-04-17 13:04:57,215 - INFO - Saved intermediate results for category Very Low to ../data/intermediate_results/Very Low_oversampled.csv
+2025-04-17 13:05:05,191 - INFO - Saved final balanced dataset to ../data/balanced_dataset.csv
+2025-04-17 13:05:05,191 - INFO - Final class distribution:
+2025-04-17 13:05:05,255 - INFO - downloads_category
+Very Low    867712
+Name: count, dtype: int64
+2025-04-17 13:13:31,450 - INFO - Loading dataset...
+2025-04-17 13:13:36,811 - INFO - Dataset loaded with 1191759 rows and 25 columns.
+2025-04-17 13:13:36,812 - INFO - Preprocessing data...
+2025-04-17 13:13:37,095 - INFO - One-hot encoding completed. Resulting columns: ['task_group_Audio Processing', 'task_group_Data Analysis & Classification', 'task_group_Image Processing', 'task_group_Multimodal Processing', 'task_group_Other', 'task_group_Specialized Applications', 'task_group_Text Processing', 'task_group_Unknown', 'task_group_Video Processing', 'author_category_Bronze', 'author_category_Gold', 'author_category_Silver', 'language_category_High', 'language_category_Low', 'language_category_Moderate', 'location_eu', 'location_fr', 'location_us']
+2025-04-17 13:13:37,271 - INFO - Target column label-encoded.
+2025-04-17 13:13:37,279 - INFO - Class distribution before oversampling: {3: 867712, 1: 271634, 2: 37247, 0: 15166}
+2025-04-17 13:13:37,279 - INFO - Desired count per class: 867712
+2025-04-17 13:13:37,279 - INFO - Initialized KMeans_SMOTE oversampler.
+2025-04-17 13:13:37,280 - INFO - Processing class 3 with 867712 samples.
+2025-04-17 13:13:37,532 - INFO - Processing class 1 with 271634 samples.
+2025-04-17 13:13:37,551 - INFO - MulticlassOversampling: Running multiclass oversampling with strategy eq_1_vs_many_successive
+2025-04-17 13:13:37,552 - ERROR - Error during oversampling for class 1: index 1 is out of bounds for axis 0 with size 1
+2025-04-17 13:13:37,553 - INFO - Processing class 2 with 37247 samples.
+2025-04-17 13:13:37,559 - INFO - MulticlassOversampling: Running multiclass oversampling with strategy eq_1_vs_many_successive
+2025-04-17 13:13:37,560 - ERROR - Error during oversampling for class 2: index 1 is out of bounds for axis 0 with size 1
+2025-04-17 13:13:37,560 - INFO - Processing class 0 with 15166 samples.
+2025-04-17 13:13:37,564 - INFO - MulticlassOversampling: Running multiclass oversampling with strategy eq_1_vs_many_successive
+2025-04-17 13:13:37,565 - ERROR - Error during oversampling for class 0: index 1 is out of bounds for axis 0 with size 1
+2025-04-17 13:13:37,565 - INFO - Final balanced DataFrame created.
+2025-04-17 13:13:37,622 - INFO - Final class distribution: {'Very Low': 867712}
+2025-04-17 13:14:05,302 - INFO - Loading dataset...
+2025-04-17 13:14:10,601 - INFO - Dataset loaded with 1191759 rows and 25 columns.
+2025-04-17 13:14:10,601 - INFO - Preprocessing data...
+2025-04-17 13:14:10,890 - INFO - One-hot encoding completed. Resulting columns: ['task_group_Audio Processing', 'task_group_Data Analysis & Classification', 'task_group_Image Processing', 'task_group_Multimodal Processing', 'task_group_Other', 'task_group_Specialized Applications', 'task_group_Text Processing', 'task_group_Unknown', 'task_group_Video Processing', 'author_category_Bronze', 'author_category_Gold', 'author_category_Silver', 'language_category_High', 'language_category_Low', 'language_category_Moderate', 'location_eu', 'location_fr', 'location_us']
+2025-04-17 13:14:11,065 - INFO - Target column label-encoded.
+2025-04-17 13:14:11,072 - INFO - Class distribution before oversampling: {3: 867712, 1: 271634, 2: 37247, 0: 15166}
+2025-04-17 13:14:11,072 - INFO - Desired count per class: 867712
+2025-04-17 13:14:11,073 - INFO - Initialized KMeans_SMOTE oversampler.
+2025-04-17 13:14:11,073 - INFO - Processing class 3 with 867712 samples.
+2025-04-17 13:14:11,326 - INFO - Processing class 1 with 271634 samples.
+2025-04-17 13:14:11,344 - INFO - MulticlassOversampling: Running multiclass oversampling with strategy eq_1_vs_many_successive
+2025-04-17 13:14:11,346 - ERROR - Error during oversampling for class 1: index 1 is out of bounds for axis 0 with size 1
+2025-04-17 13:14:11,346 - INFO - Processing class 2 with 37247 samples.
+2025-04-17 13:14:11,353 - INFO - MulticlassOversampling: Running multiclass oversampling with strategy eq_1_vs_many_successive
+2025-04-17 13:14:11,353 - ERROR - Error during oversampling for class 2: index 1 is out of bounds for axis 0 with size 1
+2025-04-17 13:14:11,353 - INFO - Processing class 0 with 15166 samples.
+2025-04-17 13:14:11,358 - INFO - MulticlassOversampling: Running multiclass oversampling with strategy eq_1_vs_many_successive
+2025-04-17 13:14:11,358 - ERROR - Error during oversampling for class 0: index 1 is out of bounds for axis 0 with size 1
+2025-04-17 13:14:11,358 - INFO - Final balanced DataFrame created.
+2025-04-17 13:14:11,415 - INFO - Final class distribution: {'Very Low': 867712}
+2025-04-17 13:18:22,503 - INFO - Loading dataset...
+2025-04-17 13:18:27,791 - INFO - Dataset loaded with 1191759 rows and 25 columns.
+2025-04-17 13:18:27,791 - INFO - Preprocessing data...
+2025-04-17 13:18:28,079 - INFO - One-hot encoding completed. Resulting columns: ['task_group_Audio Processing', 'task_group_Data Analysis & Classification', 'task_group_Image Processing', 'task_group_Multimodal Processing', 'task_group_Other', 'task_group_Specialized Applications', 'task_group_Text Processing', 'task_group_Unknown', 'task_group_Video Processing', 'author_category_Bronze', 'author_category_Gold', 'author_category_Silver', 'language_category_High', 'language_category_Low', 'language_category_Moderate', 'location_eu', 'location_fr', 'location_us']
+2025-04-17 13:18:28,256 - INFO - Target column label-encoded.
+2025-04-17 13:18:28,263 - INFO - Class distribution before oversampling: {3: 867712, 1: 271634, 2: 37247, 0: 15166}
+2025-04-17 13:18:28,263 - INFO - Desired count per class: 867712
+2025-04-17 13:18:42,844 - INFO - Loading dataset...
+2025-04-17 13:18:48,171 - INFO - Dataset loaded with 1191759 rows and 25 columns.
+2025-04-17 13:18:48,171 - INFO - Preprocessing data...
+2025-04-17 13:18:48,455 - INFO - One-hot encoding completed. Resulting columns: ['task_group_Audio Processing', 'task_group_Data Analysis & Classification', 'task_group_Image Processing', 'task_group_Multimodal Processing', 'task_group_Other', 'task_group_Specialized Applications', 'task_group_Text Processing', 'task_group_Unknown', 'task_group_Video Processing', 'author_category_Bronze', 'author_category_Gold', 'author_category_Silver', 'language_category_High', 'language_category_Low', 'language_category_Moderate', 'location_eu', 'location_fr', 'location_us']
+2025-04-17 13:18:48,632 - INFO - Target column label-encoded.
+2025-04-17 13:18:48,638 - INFO - Class distribution before oversampling: {3: 867712, 1: 271634, 2: 37247, 0: 15166}
+2025-04-17 13:18:48,639 - INFO - Desired count per class: 867712
