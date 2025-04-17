@@ -4,3 +4,4 @@ hf_potnet_model_v2, hf_models_withmodelcard_nov2024, ['task_group', 'author_cate
 hf_potnet_model_v2, hf_models_withmodelcard_nov2024, ['task_group', 'author_category', 'language_category', 'downloads_category', 'location'],
 hf_potnet_model_v3, high_downloads, ['task_group', 'author_category', 'language_category', 'downloads_category', 'location'], This dataset only contains models where downloads_category equals High\, 15166 rows
 hf_potnet_model_mid, mid_downloads, ['task_group', 'author_category', 'language_category', 'downloads_category', 'location'], This dataset only contains models where downloads_category equals Mid\, 37247 rows
+hf_potnet_model_low, low_downloads, ['task_group', 'author_category', 'language_category', 'downloads_category', 'location'], This dataset only contains models where downloads_category equals Low\, 271634 rows
