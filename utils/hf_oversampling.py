@@ -91,13 +91,13 @@ def evaluate_smote_variants(df, features, target, oversample_methods):
         logger.info(f"Evaluating oversampling method: {method_name}")
         
         # The smote_variants functions expect numpy arrays.
-        # X_train_np = X_train.values
-        # y_train_np = y_train
+        X_train_np = X_train.values
+        y_train_np = y_train
         
         try:
             # Apply oversampling
-            oversampler = sv.MulticlassOversampling(oversampler=method_name, oversampler_params={'random_state': 5})
-            X_res, y_res = oversampler.sample(X_train, y_train)
+            # oversampler = sv.MulticlassOversampling(oversampler=method_name, oversampler_params={'random_state': 5})
+            X_res, y_res = method_func.sample(X_train_np, y_train_np)
             logger.info(f"{method_name}: Resampled distribution: {np.unique(y_res, return_counts=True)}")
         except Exception as e:
             logger.error(f"Error with {method_name}: {e}")
