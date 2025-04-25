@@ -12,14 +12,18 @@ def train_potnet_model(model_name: str, data: pd.DataFrame):
         )
         print(data.location.value_counts())
 
-    data = data[['task_group', 'author_category', 'language_category', 'downloads_category', 'location']]
+    # data = data[['task_group', 'author_category', 'language_category', 'downloads_category', 'location']]
 
     if 'base_model_category' in data.columns:
         data['base_model_category'] = data['base_model_category'].fillna('unknown')
 
     print(data.info())
     print(data.isna().sum())
-
+    missing_values = data.isna().sum().sum()
+    if missing_values > 0:
+        print("Missing values found in the dataset. Replacing with 'unknown'.")
+        data.fillna('unknown', inplace=True)
+        
     categorical_columns = data.select_dtypes(include=['object', 'category']).columns.tolist()
     print(len(categorical_columns))
     print(categorical_columns)

@@ -153,3 +153,74 @@ def run_advanced_smote(df, features, target):
     print(f"Resampled class distribution: {Counter(y_resampled)}")
 
     return resampled_df
+
+
+def train_and_evaluate_model_different_dfs(training_df, testing_df, features, target, algorithm):
+    """
+    This function trains and evaluates a model on two different DataFrames.
+    """
+    X = training_df[features]
+    y = training_df[target]
+    X_test = testing_df[features]
+    y_test = testing_df[target]
+
+    # Encode target variable
+    label_encoder = LabelEncoder()
+    y_encoded = label_encoder.fit_transform(y)
+
+    y_test_encoded = label_encoder.transform(y_test)
+
+    # Create preprocessing pipeline
+    preprocessor = ColumnTransformer(
+        transformers=[
+            ('cat', OneHotEncoder(handle_unknown='ignore'), features)
+        ])
+    
+    # Create model pipeline
+    if algorithm == 'logistic':
+        model = Pipeline(steps=[
+            ('preprocessor', preprocessor),
+            ('classifier', LogisticRegression(max_iter=1000))
+        ])
+    elif algorithm == 'random_forest':
+        model = Pipeline(steps=[
+            ('preprocessor', preprocessor),
+            ('classifier', RandomForestClassifier())
+        ])
+    else:
+        raise ValueError("Invalid algorithm name. Choose 'logistic' or 'random_forest'.")
+
+    # Training and evaluation
+    start_time = time.time()
+    model.fit(X, y_encoded)
+    train_time = time.time() - start_time
+
+    start_time = time.time()
+    y_pred = model.predict(X_test)
+    test_time = time.time() - start_time
+
+    # Calculate metrics
+    accuracy = accuracy_score(y_test_encoded, y_pred)
+    precision = precision_score(y_test_encoded, y_pred, average='micro')
+    recall = recall_score(y_test_encoded, y_pred, average='micro')
+    micro_f1 = f1_score(y_test_encoded, y_pred, average='micro')
+    macro_f1 = f1_score(y_test_encoded, y_pred, average='macro')
+
+
+    # Print and log results
+    print(f"Accuracy: {accuracy:.4f}")
+    print(f"Precision: {precision:.4f}")
+    print(f"Recall: {recall:.4f}")
+    print(f"Micro Average F1 Score: {micro_f1:.4f}")
+    print(f"Macro Average F1 Score: {macro_f1:.4f}")
+    print(f"Training Time: {train_time:.2f} seconds")
+    print(f"Testing Time: {test_time:.2f} seconds")
+
+    logging.info(f"Algorithm: {algorithm}")
+    logging.info(f"Accuracy: {accuracy:.4f}")
+    logging.info(f"Precision: {precision:.4f}")
+    logging.info(f"Recall: {recall:.4f}")
+    logging.info(f"Micro Average F1 Score: {micro_f1:.4f}")
+    logging.info(f"Macro Average F1 Score: {macro_f1:.4f}")
+    logging.info(f"Training Time: {train_time:.2f} seconds")
+    logging.info(f"Testing Time: {test_time:.2f} seconds")

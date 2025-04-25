@@ -5,7 +5,7 @@ from sklearn.preprocessing import LabelEncoder
 
 df = pd.read_csv('../data/hf_models_withmodelcard_nov2024.csv')[['task_group', 'author_category', 'language_category', 'location', 'downloads_category']]
 # for testing Very Low and Low
-df = df[df.downloads_category.isin(['Very Low', 'Low'])].copy()
+df = df[df.downloads_category.isin(['Very Low', 'High'])].copy()
 
 print(df.downloads_category.value_counts())
 

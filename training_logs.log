@@ -46,3 +46,35 @@
 2025-04-11 01:10:36,448 - Macro Average F1 Score: 0.5683
 2025-04-11 01:10:36,448 - Training Time: 187.63 seconds
 2025-04-11 01:10:36,448 - Testing Time: 4.35 seconds
+2025-04-25 12:17:40,405 - Algorithm: logistic
+2025-04-25 12:17:40,405 - Accuracy: 0.1707
+2025-04-25 12:17:40,405 - Precision: 0.1707
+2025-04-25 12:17:40,406 - Recall: 0.1707
+2025-04-25 12:17:40,406 - Micro Average F1 Score: 0.1707
+2025-04-25 12:17:40,406 - Macro Average F1 Score: 0.1823
+2025-04-25 12:17:40,406 - Training Time: 19.22 seconds
+2025-04-25 12:17:40,406 - Testing Time: 0.94 seconds
+2025-04-25 12:19:11,222 - Algorithm: random_forest
+2025-04-25 12:19:11,222 - Accuracy: 0.4530
+2025-04-25 12:19:11,222 - Precision: 0.4530
+2025-04-25 12:19:11,222 - Recall: 0.4530
+2025-04-25 12:19:11,222 - Micro Average F1 Score: 0.4530
+2025-04-25 12:19:11,222 - Macro Average F1 Score: 0.3079
+2025-04-25 12:19:11,222 - Training Time: 77.80 seconds
+2025-04-25 12:19:11,222 - Testing Time: 5.80 seconds
+2025-04-25 12:19:40,354 - Algorithm: logistic
+2025-04-25 12:19:40,354 - Accuracy: 0.7457
+2025-04-25 12:19:40,354 - Precision: 0.7457
+2025-04-25 12:19:40,354 - Recall: 0.7457
+2025-04-25 12:19:40,354 - Micro Average F1 Score: 0.7457
+2025-04-25 12:19:40,354 - Macro Average F1 Score: 0.4020
+2025-04-25 12:19:40,355 - Training Time: 27.03 seconds
+2025-04-25 12:19:40,355 - Testing Time: 0.94 seconds
+2025-04-25 12:26:44,060 - Algorithm: random_forest
+2025-04-25 12:26:44,061 - Accuracy: 0.7510
+2025-04-25 12:26:44,061 - Precision: 0.7510
+2025-04-25 12:26:44,061 - Recall: 0.7510
+2025-04-25 12:26:44,061 - Micro Average F1 Score: 0.7510
+2025-04-25 12:26:44,061 - Macro Average F1 Score: 0.4123
+2025-04-25 12:26:44,061 - Training Time: 193.58 seconds
+2025-04-25 12:26:44,061 - Testing Time: 5.70 seconds
