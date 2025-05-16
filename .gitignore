@@ -4,3 +4,6 @@ __pycache__
 *.pkl
 *.pt
 potnet.egg-info
+exported_model/
+*.json
+data/hf_models_withmodelcard_nov2024.csv
