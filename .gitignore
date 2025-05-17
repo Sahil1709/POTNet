@@ -7,3 +7,4 @@ potnet.egg-info
 data/
 cloud-ai-platform-c541b3e3-934f-414e-9196-8e2bf7a7fb59/
 **/*.csv
+utils.utils/kmeans_smote_*.csv
